@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Info. cumpleaños</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="goToBooking()">
+        Reservar
+      </button>
+      <button ion-button (click)="goToPrevSlide()">
+        <ion-icon name="arrow-round-back" (click)="goToPrevSlide()"></ion-icon>
+      </button>
+      <button ion-button (click)="goToNextSlide()">
+        <ion-icon name="arrow-round-forward"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides pager>
+
+    <ion-slide>
+      <menu-ninos></menu-ninos>
+    </ion-slide>
+
+    <ion-slide>
+      <menu-padres></menu-padres>
+    </ion-slide>
+
+    <ion-slide>
+      <pinata></pinata>
+    </ion-slide>
+
+    <ion-slide>
+      <personajes></personajes>
+    </ion-slide>
+
+    <ion-slide>
+      <deco-globos></deco-globos>
+    </ion-slide>
+
+    <ion-slide>
+      <mesas-dulces></mesas-dulces>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>

@@ -1,0 +1,60 @@
+<h1>Menú Niños</h1>
+<ion-slides class="menus" (ionSlideDidChange)="changeSlides($event)">
+  <ion-slide>
+    <h1>Menú 1</h1>
+    <ul>
+      <li>Sándwiches (mixto + nutella)</li>
+      <li>Nuggets de pollo</li>
+      <li>Croissants de chocolate</li>
+      <li>Nubes</li>
+      <li>Palomitas de maíz</li>
+      <li>
+        Papas fritas:
+        <ul>
+          <li>Naturales</li>
+          <li>Gusanitos</li>
+        </ul>
+      </li>
+      <li>
+        Bebidas:
+        <ul>
+          <li>Jugos o Refrescos</li>
+          <li>Agua</li>
+        </ul>
+      </li>
+      <li>Tarta (consultar sabores)</li>
+      <li>Bolsita de chuches</li>
+    </ul>
+  </ion-slide>
+  <ion-slide>
+    <h1>Menú 2</h1>
+    <ul>
+      <li>Hot-Dogs y/o Pizza</li>
+      <li>Nuggets de pollo</li>
+      <li>Croissants de chocolate</li>
+      <li>Nubes</li>
+      <li>Palomitas de maíz</li>
+      <li>
+        Papas fritas:
+        <ul>
+          <li>Naturales</li>
+          <li>Gusanitos</li>
+        </ul>
+      </li>
+      <li>
+        Bebidas:
+        <ul>
+          <li>Jugos o Refrescos</li>
+          <li>Agua</li>
+        </ul>
+      </li>
+      <li>Tarta (consultar sabores)</li>
+      <li>Bolsita de chuches</li>
+    </ul>
+  </ion-slide>
+</ion-slides>
+<ion-slides class="gallery image-slider" loop="false" slidesPerView="2">
+  <ion-slide *ngFor="let img of images">
+    <img src="assets/img/{{img}}" class="thumb-img" imageViewer/>
+  </ion-slide>
+</ion-slides>

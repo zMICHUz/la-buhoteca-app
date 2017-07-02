@@ -1,0 +1,8 @@
+<h2>Mesas Dulces</h2>
+<ion-slides class="gallery">
+    <ion-slides class="image-slider" loop="false" slidesPerView="2">
+        <ion-slide *ngFor="let img of images">
+            <img src="assets/img/{{img}}" class="thumb-img" imageViewer/>
+        </ion-slide>
+    </ion-slides>
+</ion-slides>

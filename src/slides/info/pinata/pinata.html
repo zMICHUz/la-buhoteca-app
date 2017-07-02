@@ -1,0 +1,103 @@
+<h2>Piñata</h2>
+<table id="vsTable" style="min-height: 40%;margin-top: 4%;margin-bottom: 5%;">
+    <tbody>
+        <tr>
+            <td class="cat title" style="width: 33%;">
+                <div class="cn_helpers">
+                    <div class="mover"></div>
+                    <div class="catMover"></div>
+                </div>
+            </td>
+            <td class="title" style="width: 33%;">
+                <div class="cn_helpers">
+                    <div class="mover"></div>
+                </div>
+                <div class="" data-dynamite-selected="true">Personalizada, tematica con juguetes y chuches</div>
+            </td>
+        </tr>
+        <tr class="second">
+            <td class="cat" style="width: 33%;">
+                <div class="cn_helpers">
+                    <div class="catMover"></div>
+                </div>
+                <div class="">Hasta 14 niños</div>
+            </td>
+            <td style="width: 33%;" class="">
+                20€
+            </td>
+        </tr>
+        <tr>
+            <td class="cat" style="width: 33%;">
+                <div class="cn_helpers">
+                    <div class="catMover"></div>
+                </div>
+                <div class="">De 15 a 19</div>
+            </td>
+            <td style="width: 33%;" class="">
+                25€
+            </td>
+        </tr>
+        <tr class="second">
+            <td class="cat" style="width: 33%;">
+                <div class="cn_helpers">
+                    <div class="catMover"></div>
+                </div>
+                <div class="">De 20 a 24</div>
+            </td>
+            <td style="width: 33%;" class="">
+                30€
+            </td>
+        </tr>
+        <tr>
+            <td class="cat" style="width: 33%;">
+                <div class="cn_helpers">
+                    <div class="catMover"></div>
+                </div>
+                <div class="">De 25 a 29</div>
+            </td>
+            <td style="width: 33%;" class="">
+                35€
+            </td>
+        </tr>
+        <tr class="second">
+            <td class="cat" style="width: 33%;">
+                <div class="cn_helpers">
+                    <div class="catMover"></div>
+                </div>
+                <div class="">De 29 a 34</div>
+            </td>
+            <td style="width: 33%;" class="">
+                40€
+            </td>
+        </tr>
+        <tr>
+            <td class="cat" style="width: 33%;">
+                <div class="cn_helpers">
+                    <div class="catMover"></div>
+                </div>
+                <div class="">De 35 a 39</div>
+            </td>
+            <td style="width: 33%;" class="">
+                45€
+            </td>
+        </tr>
+        <tr class="second">
+            <td class="cat" style="width: 33%;">
+                <div class="cn_helpers">
+                    <div class="catMover"></div>
+                </div>
+                <div class="">...</div>
+            </td>
+            <td style="width: 33%;" class="">
+                ...
+            </td>
+        </tr>
+    </tbody>
+</table>
+<ion-slides class="gallery">
+    <ion-slides class="image-slider" loop="false" slidesPerView="2">
+        <ion-slide *ngFor="let img of images">
+            <img src="assets/img/{{img}}" class="thumb-img" imageViewer/>
+        </ion-slide>
+    </ion-slides>
+</ion-slides>

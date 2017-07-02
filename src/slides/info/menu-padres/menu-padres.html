@@ -1,0 +1,73 @@
+<h2>Menú Padres</h2>
+<ion-slides class="menus" (ionSlideDidChange)="changeSlides($event)">
+  <ion-slide>
+    <h1>Menú Mini 20€</h1>
+    <ul>
+      <li>Papas fritas</li>
+      <li>Croquetas</li>
+      <li>Pizza</li>
+      <li>Agua</li>
+      <li>Refresco</li>
+    </ul>
+  </ion-slide>
+  <ion-slide>
+    <h1>Menú Básico 28€</h1>
+    <ul>
+      <li>Papas fritas</li>
+      <li>Croquetas</li>
+      <li>Pizza</li>
+      <li>Bolitas de queso con arándanos</li>
+      <li>Nachos con queso</li>
+      <li>Agua</li>
+      <li>Refrescos</li>
+    </ul>
+  </ion-slide>
+  <ion-slide>
+    <h1>Menú Extra 37€</h1>
+    <ul>
+      <li>Papas fritas</li>
+      <li>Croquetas</li>
+      <li>Pizza</li>
+      <li>Bolitas de queso con arándanos</li>
+      <li>Nachos con queso</li>
+      <li>Tortilla de papas</li>
+      <li>Agua</li>
+      <li>Refrescos</li>
+    </ul>
+  </ion-slide>
+  <ion-slide>
+    <h1>Menú Gourmet 47€</h1>
+    <ul>
+      <li>Papas fritas</li>
+      <li>Croquetas</li>
+      <li>Pizza</li>
+      <li>Bolitas de queso con arándanos</li>
+      <li>Nachos con queso</li>
+      <li>Tortilla de papas</li>
+      <li>Paté con panecillos</li>
+      <li>Agua</li>
+      <li>Refrescos</li>
+    </ul>
+  </ion-slide>
+  <ion-slide>
+    <h1>Menú Deluxe 58€</h1>
+    <ul>
+      <li>Papas fritas</li>
+      <li>Croquetas</li>
+      <li>Pizza</li>
+      <li>Bolitas de queso con arándanos</li>
+      <li>Nachos con queso</li>
+      <li>Paté con panecillos</li>
+      <li>Tabla de embutidos con picos</li>
+      <li>Agua</li>
+      <li>Refrescos</li>
+    </ul>
+  </ion-slide>
+</ion-slides>
+<ion-slides class="gallery">
+  <ion-slides class="image-slider" loop="false" slidesPerView="2">
+    <ion-slide *ngFor="let img of images">
+      <img src="assets/img/{{img}}" class="thumb-img" imageViewer/>
+    </ion-slide>
+  </ion-slides>
+</ion-slides>
